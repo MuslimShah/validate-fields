@@ -1,12 +1,16 @@
 {
-  "name": "validate-fields",
-  "version": "1.0.0",
+  "name": "validate-request-fields",
+  "version": "1.0.1",
   "description": "A simple utility to validate required fields in an object",
-    "main": "index.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MuslimShah/validate-fields.git"
+  },
+  "keywords": ["validation", "fields", "api"],
+  "author": "Muslim Shah",
+  "license": "MIT"
 }
