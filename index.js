@@ -1,4 +1,3 @@
-// index.js
 /**
  * Validate required fields in an object.
  *
@@ -7,10 +6,14 @@
  * @returns {Array} - An array of missing field names.
  */
 const validateFields = (data, fields) => {
+  // If fields is an array, use it directly; otherwise, treat individual fields as an array.
   const requiredFields = Array.isArray(fields)
     ? fields
-    : Array.from(arguments).slice(1);
-  const missingFields = requiredFields.filter((field) => !data[field]);
+    : Array.from(arguments).slice(1); // This handles individual arguments
+
+  const missingFields = requiredFields.filter(
+    (field) => !data.hasOwnProperty(field)
+  );
   return missingFields;
 };
 
